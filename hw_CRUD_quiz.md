@@ -42,7 +42,7 @@ by using the if clause on id attribute we are telling that if id is not null the
 
 Q7. Why are some of the CRUD actions represented by instance methods, and others by class methods?
 two types of methods : class level methods and instance/object level methods
-for class level methods we don't need any instance to be created to call the class methods . in my case i used delete_all, find methods are taken as class methods
+for class level methods we don't need any instance to be created to call the class methods . in my case i used delete_all, find methods are taken as class methods because i am taking the objects and performing action with it 
 and insert ,update and delete a single or multiple lines are taken asa instance methods , we need an instance to be created to perform the operation on it.
 <!-- ================================= -->
 
