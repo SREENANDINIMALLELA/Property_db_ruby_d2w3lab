@@ -2,7 +2,7 @@ require('pg')
 class Property
   attr_accessor :number_of_bedrooms , :value , :year_build ,:build, :address
   def initialize(options)
-    @id = options['id'].to_i()if options ['id']
+    @id = options['id'].to_i() if options['id']
     @number_of_bedrooms=options['number_of_bedrooms'].to_i()
     @value= options['value'].to_i()
     @year_build=options['year_build'].to_i()
@@ -69,5 +69,10 @@ class Property
     else
       return nil
     end
+    <===========>
+    # return nil if property_by_address.first() == nil
+    # property_hash=property_by_address[0]
+    # found_property =Property.new(property_hash)
+    # return found_property
   end
 end

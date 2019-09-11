@@ -1,6 +1,6 @@
 require ('pry')
 require_relative('./models/property.rb')
-Property.delete_all()
+# Property.delete_all()
 property_1 = Property.new({
   'number_of_bedrooms' => 4,
   'value'=> 100000,
@@ -29,8 +29,8 @@ property_3 = Property.new({
 # property_1.update()
 # property_2.delete()
 property = Property.find(1)
-address = '1 Hope Street'
-property_found_by_address = Property.find_by_address(address)
-
+# address = '123 Hope Street'
+property_found_by_address = Property.find_by_address('123 Hope Street')
+property_found_by_address_not_existed = Property.find_by_address('1 Hope Street')
 binding.pry
 nil
