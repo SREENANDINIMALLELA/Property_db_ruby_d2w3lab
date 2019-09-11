@@ -57,7 +57,7 @@ after executing the db.exec_prepared() we will get the array of hashes from it a
 
 <!-- ================================= -->
 Q9. Why do we use prepared statements when performing database operations?
-If we give values directly to the database there is a chance of attackers trying to access that data . so to protect our code safe from hackers we use prepared statements .
+If we give values directly to the database there is a chance of attackers trying to access that data . so to protect our code safe from hackers we use prepared statements to split it up in two steps .
 
 <!-- ================================= -->
 ## Extension Questions
